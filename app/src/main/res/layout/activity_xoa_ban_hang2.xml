@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".XoaBanHang">
+<!--    Tạo form xóa bán hàng-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/body3"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/XoaBH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="BÁN HÀNG"
+                android:textAlignment="center"
+                android:textColor="@color/text"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hintEnabled="false"
+            android:layout_marginTop="@dimen/body1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtMaBHx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/background_view"
+                android:drawablePadding="@dimen/body3"
+                android:ems="10"
+                android:fontFamily="@font/roboto"
+                android:hint="Mã sản phẩm"
+                android:inputType="text"
+                android:maxLength="30"
+                android:paddingHorizontal="@dimen/body3"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/body1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <Button
+                android:id="@+id/btnXoaBHx"
+                android:layout_width="155dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/body1"
+                android:layout_marginLeft="125dp"
+                android:background="@drawable/custom_button"
+                android:hint="Xóa"
+                android:textAlignment="center"
+                android:textColorHint="#FFFFFF"
+                android:textSize="25dp"
+                app:backgroundTint="@null" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
